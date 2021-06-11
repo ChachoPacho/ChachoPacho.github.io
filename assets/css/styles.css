@@ -1,0 +1,140 @@
+/* Globals */
+* {
+    box-sizing: border-box;
+    font-size: 16.5px;
+}
+
+body {
+    background: linear-gradient(170deg, #5dd3e9 0%, #012b7e 55%);
+    background-attachment: fixed;
+}
+
+/* Generals */
+
+.card, .btn-floating, .section {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24), 0 2px 10px 0 rgba(0, 0, 0, .12);
+}
+
+.shadowplus {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24), 0 2px 10px 0 rgba(0, 0, 0, .24);
+}
+
+/* Utilities */
+
+.right {
+    float: right !important;
+}
+
+.left {
+    float: left !important;
+}
+
+.section {
+    width: 75%;
+    border-radius: 3px;
+}
+
+.img-responsive {
+    height: 100%;
+    display: block;
+}
+
+/* Imports modified */
+
+.container > .row {
+    justify-content: center!important;
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+}
+
+/* Nav */
+
+.nav {
+    background-color: #011149 ;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+/* Page Content */
+
+.page-content {
+    background-color: #f5f5f5;
+}
+
+/* Links */
+
+.btn-floating {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+    line-height: 37px;
+    display: inline-block;
+    margin-left: 12px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.color-ig {
+    background-color: #dd2a7b !important;
+}
+
+.color-in {
+    background-color: #1565C0 !important;
+}
+
+.color-gh {
+    background-color: #24292d !important;
+}
+
+/* Presentation Card */
+
+.card {
+    background-color: #0194fe;
+    height: 400px;
+    overflow: hidden;
+    border: 0;
+    word-wrap: break-word;
+}
+
+.card-content {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(5, 0, 0, 0.75);
+}
+
+.card-content h4 {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 1.14rem 0 0.912rem 0;
+    display: block;
+    margin-bottom: 0;
+}
+
+.card-content h6 {
+    font-weight: 900;
+    font-size: 1.2em;
+    margin: 1.14rem 0 0.912rem 0;
+    display: block;
+    margin-bottom: 0;
+}
+
+.card-head {
+    width: 100%;
+}
+
+.slant {
+    top: 0;
+    z-index: 1;
+    position: absolute;
+    border-style: solid;
+    border-width: 400px 0 0 75px;
+    border-color: rgba(223, 50, 50, 0) transparent transparent #0194fe;
+}
+
+.profile {
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
