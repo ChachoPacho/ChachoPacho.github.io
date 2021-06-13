@@ -1,22 +1,34 @@
 /* Globals */
 * {
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     font-size: 16.5px;
 }
 
 body {
     background: linear-gradient(170deg, #5dd3e9 0%, #012b7e 55%);
     background-attachment: fixed;
+    width: 100%;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-style: italic;
 }
 
 /* Generals */
 
-.card, .btn-floating, .section {
+.personal-card, .btn-floating, .section, .btn, .line {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    border-radius: 5px;
 }
 
-.shadowplus {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.24), 0 2px 10px 0 rgba(0, 0, 0, .24);
+.section, .section-div {
+    width: 75%;
+    margin-inline: auto;
+    margin-bottom: 6rem!important;
 }
 
 /* Utilities */
@@ -29,14 +41,9 @@ body {
     float: left !important;
 }
 
-.section {
-    width: 75%;
-    border-radius: 3px;
-}
-
 .img-responsive {
-    height: 100%;
-    display: block;
+    height: inherit;
+    width: inherit;
 }
 
 /* Imports modified */
@@ -45,6 +52,12 @@ body {
     justify-content: center!important;
     padding-top: 3rem!important;
     padding-bottom: 3rem!important;
+}
+
+.center.fa::before {
+    display: flex; 
+    justify-content: center;
+    width:1.2em;
 }
 
 /* Nav */
@@ -60,6 +73,8 @@ body {
 
 .page-content {
     background-color: #f5f5f5;
+    height: 100%;
+    margin-top: 70vh;
 }
 
 /* Links */
@@ -89,14 +104,21 @@ body {
     background-color: #24292d !important;
 }
 
+.btn-floating:hover, button:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.48), 0 2px 10px 0 rgba(0, 0, 0, .48);
+    color: #fff !important;
+}
+
 /* Presentation Card */
 
-.card {
+#personal-card-information {
+    height: min-content;
+}
+
+.personal-card {
     background-color: #0194fe;
-    height: 400px;
     overflow: hidden;
-    border: 0;
-    word-wrap: break-word;
+    margin-top: -20% !important;
 }
 
 .card-content {
@@ -106,7 +128,6 @@ body {
 
 .card-content h4 {
     font-weight: 900;
-    font-size: 2rem;
     margin: 1.14rem 0 0.912rem 0;
     display: block;
     margin-bottom: 0;
@@ -114,7 +135,6 @@ body {
 
 .card-content h6 {
     font-weight: 900;
-    font-size: 1.2em;
     margin: 1.14rem 0 0.912rem 0;
     display: block;
     margin-bottom: 0;
@@ -124,19 +144,114 @@ body {
     width: 100%;
 }
 
-.slant {
-    top: 0;
-    z-index: 1;
-    position: absolute;
-    border-style: solid;
-    border-width: 400px 0 0 75px;
-    border-color: rgba(223, 50, 50, 0) transparent transparent #0194fe;
-}
-
 .profile {
-    position: absolute;
     right: 0;
+    width: 100%;
     height: 100%;
 }
 
-/* Presentation Text */
+.slant {
+    position: absolute;
+    z-index: 1;
+}
+
+/* Presentation Information */
+
+.btn-green {
+    background-color: #06A763;
+    color: #fff;
+}
+
+/* Time Line */
+
+#line {
+    position: absolute;
+    right: calc(50% - 2px);
+    height: calc(100% / 2);
+    width: 6px;
+    background-color: #5dd3e9;
+}
+
+.block-line {
+    display: flex !important;
+}
+
+.time-line {
+    margin: 0 auto;
+    position: relative;
+}
+
+.line {
+    width: 40%;
+    margin-bottom: 100px;
+    display: flex;
+    margin-bottom: 0!important;
+    position: relative;
+    z-index: 1;
+    background-color: #f5f5f5;
+}
+
+.line::before {
+    content: '';
+    width: 7.5%;
+    background-color: #0194fe;
+    border-radius: 5px 0 0 5px;
+}
+
+.time-line * {
+    color: #3f3f3f;
+    text-shadow: none;
+    font-size: 0.9rem;
+}
+
+.timeline-title {
+    color: black;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.card-content {
+    padding: 1.5rem!important;
+}
+
+ball {
+    display: flex;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #0194fe;
+    border-radius: 50%;
+    right: calc(50% - 25px);
+    justify-content: center!important;
+}
+
+ball p {
+    font-size: 2em !important;
+    margin: 0;
+    height: min-content;
+    margin-top: auto!important;
+    margin-bottom: auto!important;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29) !important;
+    color: white !important;
+}
+
+ball.b-left::after, ball.b-right::after {
+    position: absolute;
+    z-index: 0;
+    content: '';
+    width: 200%;
+    height: 6px;
+    background-color: #5dd3e9;
+    top: 50%;
+}
+
+ball.b-left::after {
+    right: 100%;
+}
+
+ball.b-right::after {
+    left: 100%;
+}
