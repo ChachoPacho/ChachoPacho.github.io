@@ -21,5 +21,5 @@ function personal_card() {
     const pci = document.getElementById('personal-card-information');
     const pcimg = document.getElementById('personal-card-image');
 
-    pcimg.style = 'height: ' + pci.clientHeight + 'px;';
+    pcimg.style = 'height: ' + (pci.clientHeight + 1) + 'px;';
 };
