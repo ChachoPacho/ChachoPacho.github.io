@@ -28,7 +28,7 @@ h6 {
 .section, .section-div {
     width: 75%;
     margin-inline: auto;
-    margin-bottom: 6rem!important;
+    margin-bottom: 4rem!important;
     background-color: #f5f5f5;
 }
 
@@ -61,13 +61,40 @@ h6 {
     width:1.2em;
 }
 
+.dropdown-menu {
+    min-width: unset !important;
+    right: 0;
+}
+
+.btn-light {
+    color: white;
+    font-weight: bold;
+}
+
+.btn-light:hover {
+    color: black !important;
+}
+
+#cInterests .fa {
+    font-size: 1.5em;
+}
+
+.my-6 {
+    margin-top: 6rem!important;
+    margin-bottom: 6rem!important;
+}
+
 /* Nav */
 
 .nav {
-    background-color: #012b7e ;
+    background-color: #016fbf;
     width: 100%;
     position: absolute;
     top: 0px;
+}
+
+.nav-btn {
+    background-color: #0182de;
 }
 
 /* Page Content */
@@ -103,6 +130,10 @@ h6 {
 
 .color-gh {
     background-color: #24292d !important;
+}
+
+.color-wb {
+    background-color: lightslategray !important;
 }
 
 .btn-floating:hover, button:hover {
@@ -287,4 +318,10 @@ ball.b-right::after {
     height: 100%;
     background-color: white;
     left: 0;
+}
+
+/* Interests */
+
+#cInterests span {
+    font-size: 1.25em;
 }

@@ -1,4 +1,3 @@
-
 window.onload = resizer;
 window.onresize = resizer;
 
