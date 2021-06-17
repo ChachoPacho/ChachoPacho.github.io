@@ -423,3 +423,9 @@ form > div > textarea {
 .thanks p {
     font-size: 1.5em;
 }
+
+/* Footer */
+
+footer > div.container {
+    color: #f5f5f5;
+}

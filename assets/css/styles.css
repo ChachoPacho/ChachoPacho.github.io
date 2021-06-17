@@ -16,6 +16,11 @@
     .profile-slant {
         transform: translate(0.25px, 1px) !important;
     }
+
+    #CopyRightContainer {
+        padding-top: 2rem !important;;
+        padding-bottom: 1rem !important;
+    }
 }
 
 @media (min-width: 992px) {

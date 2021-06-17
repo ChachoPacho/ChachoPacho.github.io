@@ -35,6 +35,31 @@ function wakeUpModal(id) {
     modal.style.display = 'block';
 }
 
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+
 function moveToContact() {
-    window.scrollTo(0, $('body')[0].clientHeight);
+    if(isMobile.any()) {
+        window.scrollTo(0, $('#emailForm').offset().top - 50);
+    } else {
+        window.scrollTo(0, $('.cTitles_contact').offset().top - 50);
+    }
 }

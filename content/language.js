@@ -27,18 +27,24 @@ function hashRead(hash) {
 }
 
 function ChangeLanguage(lang) {
+    DisplayContent(lang);
     const CurrentCont = CONTENT[lang];
-    for (let content in CurrentCont) {
-        let Cont = CurrentCont[content]
-        if (content == 'cEducation') {
-            DisplayContent(lang);
-            continue;
-        };
-        if (content in ['cSkills', 'cInterests', 'cEducation', 'cWork']) continue;
+    for (let content of ['cTitles', 'cGeneral', 'cButtons', 'cPersonalInfo']) {
+        let Cont = CurrentCont[content];
         for (let e in Cont) {
-            let cHTML = document.getElementsByClassName(content + '_' + e)[0];
-            if (cHTML != undefined) {
-                cHTML.innerHTML = Cont[e];
+            if (Array.isArray(Cont[e])) {
+                for (let subE in Cont[e]) {
+                    let Elem = document.getElementsByClassName(content + '_' + e + '_' + subE)[0];
+                    Elem.innerHTML = Cont[e][subE];
+                }
+            } else {
+                let Elem = document.getElementsByClassName(content + '_' + e);
+                fillElem(Elem, Cont, e);
+            }
+            function fillElem(Elem, Cont, e) {
+                for (const s of Elem) {
+                    s.innerHTML = Cont[e];
+                }
             }
         }
     }

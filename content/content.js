@@ -2,17 +2,23 @@ const CONTENT = {
     'es': {
         'cTitles': {
             'language': 'Idioma',
+            'personalCard': 'Estudiante de Licenciatura en Ciencias de la Computación',
             'education': '<i class="fa fa-graduation-cap" aria-hidden="true"></i> EDUCACIÓN',
             'skills': '<i class="fa fa-sliders" aria-hidden="true" style="color:brown;"></i> HABILIDADES',
             'interest': '<i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> INTERESES',
             'contact': '<i class="fa fa-hashtag" aria-hidden="true" style="color:#8a3f00;"></i> CONTACTO',
             'work': '<i class="fa fa-briefcase" aria-hidden="true" style="color:gray;"></i> EXPERIENCIA',
         },
+        'cGeneral': {
+            'copyRight': [
+                'Todos los derechos reservados por <strong>Gonzalo Bordón.</strong>', 
+                'Sinceramente, no creo que tenga utilidad aquí, pero siempre quise decirlo...'
+            ],
+        },
         'cButtons': {
             'downloadCV': 'Descarga mi CV',
             'contact': 'Contáctame',
         },
-        'cPersonalCard': ['Estudiante de Licenciatura en Ciencias de la Computación'],
         'cPersonalInfo': [
             'Hola! Soy Gonzalo Bordón, un Junior Developer que tiene:',
             '<i class="fa fa-battery-quarter"></i> en experiencia laboral...',
@@ -30,7 +36,7 @@ const CONTENT = {
                 'modal': false
             },
             'isficana': {
-                'title': 'English Education',
+                'title': 'Educación Inglesa',
                 'letter': 'E',
                 'where': 'ISFICANA Centro Binacional',
                 'when': 'February 2012 - December 2020',
@@ -132,17 +138,23 @@ const CONTENT = {
     'en': {
         'cTitles': {
             'language': 'Language',
+            'personalCard': 'Bachelor of Computer Science Student',
             'education': '<i class="fa fa-graduation-cap" aria-hidden="true"></i> EDUCATION',
             'skills': '<i class="fa fa-sliders" aria-hidden="true" style="color:brown;"></i> SKILLS',
             'work': '<i class="fa fa-briefcase" aria-hidden="true" style="color:gray;"></i> EXPERIENCE',
             'interest': '<i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> INTERESTS',
             'contact': '<i class="fa fa-hashtag" aria-hidden="true" style="color:#8a3f00;"></i> CONTACT',
         },
+        'cGeneral': {
+            'copyRight': [
+                'All rights reserved by <strong>Gonzalo Bordón.</strong>', 
+                'Honestly, I do not know if there is an utility here, but I always wanted to say so...'
+            ],
+        },
         'cButtons': {
             'downloadCV': 'Download my CV',
             'contact': 'Contact Me',
         },
-        'cPersonalCard': ['Bachelor of Computer Science Student'],
         'cPersonalInfo': [
             'Hi! I am Gonzalo Bordón, a Junior Developer that has:',
             '<i class="fa fa-battery-quarter"></i> in work experience ...',

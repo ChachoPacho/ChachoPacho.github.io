@@ -11,11 +11,8 @@ scrollTop.addEventListener('animationend', function () {
 });
 
 window.addEventListener('scroll', function () {
-    console.log(this.window.screen.height)
-    console.log('--------------------------')
     for (let index = 0; index < visHide.length; index++) {
         const element = visHide[index];
-        console.log(element.getBoundingClientRect().y)
 
         if (this.window.screen.height >= element.getBoundingClientRect().y) {
             element.classList.remove('animate__zoomOut');
@@ -23,5 +20,4 @@ window.addEventListener('scroll', function () {
             element.style.visibility = 'visible';
         }
     }
-    console.log('--------------------------')
 })
