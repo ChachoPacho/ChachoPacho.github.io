@@ -1,24 +1,40 @@
+const emailForm = document.getElementById('emailForm');
+const emailer = document.getElementById('emailer');
+
+emailForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const form = new FormData(this);
+
+    emailer.setAttribute('href', `mailto:gbordonnet@gmail.com?subject=${form.get('name')} || ${form.get('email')}&body=<div style='width:100%; height:25px'>${form.get('subject')}</div> <div style='width:100%'>${form.get('msg')}</div>`);
+
+    emailer.click();
+})
+
 window.onload = resizer;
 window.onresize = resizer;
 
 function resizer(params) {
-    personal_card();
     slant_image();
 }
 
 function slant_image() {
-    const profile_img = document.getElementById('profile-image');
-    const profile_slant = document.getElementById('profile-slant');
+    const profile_imgs = document.getElementsByClassName('img-responsive');
+    const profile_slants = document.getElementsByClassName('profile-slant');
 
-    let height = profile_img.height;
-    let width = profile_img.width;
+    for (let index = 0; index < profile_imgs.length; index++) {
+        const profile_img = profile_imgs[index];
+        const profile_slant = profile_slants[index];
 
-    profile_slant.style = "border-right: " + width / 4 + 'px solid transparent; border-bottom: ' + height + 'px solid #0194fe;';
+        profile_slant.style = "border-right: " + profile_img.width / 4 + 'px solid transparent; border-bottom: ' + profile_img.height + 'px solid #0194fe;';
+    }
 };
 
-function personal_card() {
-    const pci = document.getElementById('personal-card-information');
-    const pcimg = document.getElementById('personal-card-image');
+function wakeUpModal(id) {
+    let modal = document.getElementById(id);
+    modal.style.display = 'block';
+}
 
-    pcimg.style = 'height: ' + (pci.clientHeight + 1) + 'px;';
-};
+function moveToContact() {
+    window.scrollTo(0, $('body')[0].clientHeight);
+}
