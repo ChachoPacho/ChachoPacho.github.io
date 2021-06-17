@@ -37,7 +37,7 @@ const CONTENT = {
             },
             'isficana': {
                 'title': 'Educación en Lengua Inglesa',
-                'letter': 'E',
+                'letter': 'I',
                 'where': 'ISFICANA Centro Binacional',
                 'when': 'February 2012 - December 2020',
                 'content': 'Fui a esta institución desde los diez hasta los dieciocho años. Siempre he tenido muy buenas notas y una oratoria muy fluida.',
