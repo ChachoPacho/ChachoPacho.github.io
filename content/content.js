@@ -36,7 +36,7 @@ const CONTENT = {
                 'modal': false
             },
             'isficana': {
-                'title': 'Educación Inglesa',
+                'title': 'Educación en Lengua Inglesa',
                 'letter': 'E',
                 'where': 'ISFICANA Centro Binacional',
                 'when': 'February 2012 - December 2020',
@@ -172,7 +172,7 @@ const CONTENT = {
                 'modal': false
             },
             'isficana': {
-                'title': 'English Education',
+                'title': 'English Languague Education',
                 'letter': 'E',
                 'where': 'ISFICANA Centro Binacional',
                 'when': 'February 2012 - December 2020',
