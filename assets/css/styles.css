@@ -4,7 +4,7 @@
     }
 
     .profile-slant {
-        transform: translate(0.25px, 1px) !important;
+        transform: translate(0px, 1px) !important;
     }
 }
 

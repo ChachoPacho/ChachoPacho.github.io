@@ -74,6 +74,10 @@ h6 {
     right: 0;
 }
 
+.dropdown-item {
+    padding: 0;
+}
+
 .btn-light {
     color: white;
     font-weight: bold;

@@ -26,7 +26,7 @@ function slant_image() {
         const profile_img = profile_imgs[index];
         const profile_slant = profile_slants[index];
 
-        profile_slant.style = "border-right: " + profile_img.width / 4 + 'px solid transparent; border-bottom: ' + profile_img.height + 'px solid #0194fe;';
+        profile_slant.style = "border-right: " + profile_img.width / 4 + 'px solid transparent; border-bottom: ' + (profile_img.height + 1) + 'px solid #0194fe;';
     }
 };
 
