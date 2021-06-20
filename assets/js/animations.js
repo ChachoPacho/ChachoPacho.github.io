@@ -15,9 +15,29 @@ window.addEventListener('scroll', function () {
         const element = visHide[index];
 
         if (this.window.screen.height >= element.getBoundingClientRect().y) {
-            element.classList.remove('animate__zoomOut');
-            element.classList.add('animate__animated', 'animate__zoomIn');
-            element.style.visibility = 'visible';
+            animateElement(element, 'zoomIn', element);
         }
     }
 })
+
+function animateElement(element, animation, special) {
+    if (animation == 'zoomIn') {
+        special.style.display = 'block';
+        element.classList.add('animate__zoomIn');
+        element.style.visibility = 'visible';
+    }
+    if (animation == 'zoomOut') {
+        element.classList.remove('animate__zoomIn');
+        element.classList.add('animate__zoomOut');
+
+        special.animate({opacity: 0}, 1000);
+
+        element.addEventListener('animationend', function ModalCloser() {
+            element.classList.remove('animate__zoomOut');
+            special.style.display = 'none';
+            element.removeEventListener('animationend', ModalCloser);
+        })
+    }
+}
+
+

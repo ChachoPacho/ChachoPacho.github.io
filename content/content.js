@@ -132,7 +132,17 @@ const CONTENT = {
             'email': 'Correo Electrónico',
             'subject': 'Tema',
             'message': 'Mensaje: Quiero hacer una entrevista ;)',
-            'send': 'Enviar'
+            'send': 'Enviar',
+            'modal': {
+                'texto': 'Hola! De nuevo... Ésta es una página estática, por lo que no puedo hacer uso de tecnologías como PHPMailer, y hacer un ContactForm con mis credenciales no es la cosa más segura que digamos... Lo que quiero decis es, si no tienes abierto tu Gestor de Correos ahora mismo, no se ha mandado ningún mail, te dejo mis datos nuevamente por si quieres hacerlo de forma manual:',
+                'datos': [
+                    '<strong>EMAIL:</strong> gbordonnet@gmail.com',
+                    '<strong>INSTAGRAM:<strong> <a href="https://www.instagram.com/gonzalo_bordon02/" target="_blank">gonzalo_bordon02</a>',
+                    '<strong>LINKEDIN:</strong> <a href="https://www.linkedin.com/in/gonzalobordon02" target="_blank">gonzalobordon02</a>',
+                    '<strong>GITHUB:</strong> <a href="https://www.github.com/chachopacho/" target="_blank">chachopacho</a>'
+                ],
+                'final': 'Tambien tengo una web con PHP, pero su HOST se mantiene a base de publicidad: <a href="www.gonzalobordon.com.ar" target="_blank">www.gonzalobordon.com.ar<a>'
+            }
         }
     },
     'en': {
@@ -268,7 +278,17 @@ const CONTENT = {
             'email': 'e-mail',
             'subject': 'Subject',
             'message': 'Message: Want to interview u ;)',
-            'send': 'Send'
+            'send': 'Send',
+            'modal': {
+                'texto': 'Hi! Again ... This is a static page, so I can\'t make use of technologies like PHPMailer, and making a ContactForm with my credentials is not the safest thing... What I want to say is, if you don\'t have open your Email Client right now, no mail has been sent, I leave you my data again in case you want to do it manually:',
+                'datos': [
+                    '<strong>EMAIL:</strong> gbordonnet@gmail.com',
+                    '<strong>INSTAGRAM:<strong> <a href="https://www.instagram.com/gonzalo_bordon02/" target="_blank">gonzalo_bordon02</a>',
+                    '<strong>LINKEDIN:</strong> <a href="https://www.linkedin.com/in/gonzalobordon02" target="_blank">gonzalobordon02</a>',
+                    '<strong>GITHUB:</strong> <a href="https://www.github.com/chachopacho/" target="_blank">chachopacho</a>'
+                ],
+                'final': 'I also have a website with PHP, but its HOST is maintained based on advertising: <a href="https://www.gonzalobordon.com.ar" target="_blank">www.gonzalobordon.com.ar<a>'
+            }
         }
     }
 }

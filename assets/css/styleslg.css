@@ -109,6 +109,8 @@ i.fa.fa-circle-o {
     visibility: hidden;
     --animate-delay: 1s;
     --animate-duration: 2s;
+    position: relative;
+    z-index: 1;
 }
 
 /* Scroll */
@@ -121,6 +123,7 @@ i.fa.fa-circle-o {
     width: 2.5rem;
     height: 2.5rem;
     justify-content: center;
+    z-index: 10;
 }
 
 .scrollup {
@@ -198,30 +201,24 @@ i.fa.fa-circle-o {
     height: min-content;
 }
 
+.mobileProfile {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    right: 0;
+    left: 0;
+    top: 20%;
+}
+
 .profile-slant {
     position: absolute;
     z-index: 1;
-    transform: translateX(-1px);
 }
 
 .personal-card {
     background-color: #0194fe;
     overflow: hidden;
     margin-top: -20vh !important;
-}
-
-.card-content h4 {
-    font-weight: 900;
-    margin: 1.14rem 0 0.912rem 0;
-    display: block;
-    margin-bottom: 0;
-}
-
-.card-content h6 {
-    font-weight: 900;
-    margin: 1.14rem 0 0.912rem 0;
-    display: block;
-    margin-bottom: 0;
 }
 
 .card-head {
@@ -232,6 +229,8 @@ i.fa.fa-circle-o {
     right: 0;
     width: 100%;
     height: 100%;
+    position: relative;
+    overflow: hidden!important;
 }
 
 /* Presentation Information */
@@ -266,8 +265,6 @@ i.fa.fa-circle-o {
     margin-bottom: 100px;
     display: flex;
     margin-bottom: 0!important;
-    position: relative;
-    z-index: 1;
     background-color: #f5f5f5;
 }
 
@@ -288,10 +285,6 @@ i.fa.fa-circle-o {
     color: black;
     font-size: 1.5rem;
     margin: 0;
-}
-
-.card-content {
-    padding: 1.5rem!important;
 }
 
 .time-line > div:last-child {

@@ -51,6 +51,7 @@ function ChangeLanguage(lang) {
 }
 
 function DisplayContent(lang) {
+    Footer.innerHTML = '';
     const CurrentCont = CONTENT[lang];
 
     TimeLineContent(cEducation, CurrentCont, 'cEducation');
@@ -90,7 +91,7 @@ function DisplayContent(lang) {
         let cont = CurrentCont['cInterests']['content'][e];
         let special = ['#0194fe;', '#c0e4ff;']
         EditCont +=
-            "<div class='col-12 col-md-4 col-lg-3 text-center py-3' style='color:" + special[i % 2] + 'background-color:' + special[(i + 1) % 2] + "'>" +
+            "<div class='animate__animated visHide col-12 col-md-4 col-lg-3 text-center py-3' style='color:" + special[i % 2] + 'background-color:' + special[(i + 1) % 2] + "'>" +
                 "<div>" + 
                     cont + 
                 "</div>" +
@@ -112,7 +113,7 @@ function DisplayContent(lang) {
             "</div>" +
         "</div>" +
         "<div class='col-12 col-md-6'>" +
-            "<form class='section d-flex p-4 pt-5' id='emailForm'>" +
+            "<form class='animate__animated visHide section d-flex p-4 pt-5' id='emailForm'>" +
                 "<div>" +
                     "<input type='text' name='name' placeholder='" + contacto['name'] + "' required>" +
                     "<input type='text' name='subject' placeholder='" + contacto['subject'] + "' maxlength='30' required>" +
@@ -123,11 +124,25 @@ function DisplayContent(lang) {
                 "</div>" +
             "</form>" +
         "</div>";
+
+    let contactDatos = '';
+    for (const object of contacto['modal']['datos']) {
+        contactDatos += "<li>" + object + '</li>';
+    }
+
+    Footer.innerHTML += ModalCreator(
+        "<div class='d-flex'>" + 
+            "<h1 class='m-auto' style='font-size:100px;'> :( </h1>" +
+        "</div>" +
+        "<p class='pt-4 px-2'>" + contacto['modal']['texto'] + "</p>" + 
+        "<ul class='p-0 mx-auto ms-sm-5 me-sm-auto' style='list-style: none;'>" + contactDatos + "</ul>" +
+        "<p class='pt-4 px-2'>" + contacto['modal']['final'] + "</p>", 
+        'contactModal');
 }
 
 function TimeLineContent(elementToFilled, CurrentCont, category) {
     elementToFilled.innerHTML = '';
-    elementToFilled.innerHTML += ('<div class="line d-none d-md-block"></div>');
+    elementToFilled.innerHTML += ('<div class="line"></div>');
     var i = 0;
     let modal = '';
     for (const e in CurrentCont[category]) {
@@ -145,28 +160,12 @@ function TimeLineContent(elementToFilled, CurrentCont, category) {
             if (cont['iframe']) iframe = "<iframe class='w-100' src='" + cont['iframe'] + "' style='height: 20em'></iframe>";
             if (cont['img']) img = "<img class='w-100' src='" + cont['img'] + "'></img>";
 
-            modal += 
-                "<div class='modal' style='background-color: rgba(0, 0, 0, 0.5);' id='" + e + "'>" +
-                    "<div class='h-100 w-100 d-flex' style='oveflow-y: scroll'>" +
-                        "<div class='container my-auto p-4'>" +
-                            "<div class='w-100 d-flex'>" +
-                                "<button class='btn ms-auto px-4 btn-danger' onclick=\"$('#" + e + "')[0].style.display = 'none'\">" +
-                                    "<i class='center fa fa-times'></i>" +
-                                "</button>" +
-                            "</div>" +  
-                            "<div class='section w-100 mt-auto p-3 p-md-5' style='margin-bottom: auto !important'>" +
-                                iframe +
-                                img +
-                                "<p class='pt-4 px-2'>" + cont['modal'] + "</p>" +
-                            "</div>" +
-                        "</div>" +
-                    "</div>" +
-                "</div>";
+            modal = ModalCreator(iframe + img + "<p class='pt-4 px-2'>" + cont['modal'] + "</p>", e);
         } else {
             modal_content = cont['content'];
         }
         let lines = [
-            "<div class='col-12 col-md-5'>" +
+            "<div class='animate__animated visHide col-12 col-md-5'>" +
                 "<div class = 'lineText w-100 w-md-auto'>" +
                     "<div class = 'card-content' >" +
                         "<h5 class = 'timeline-title' >" + cont['title'] + "</h5> " +
@@ -196,9 +195,28 @@ function TimeLineContent(elementToFilled, CurrentCont, category) {
             "</div> " +
         "</div>";
         i++;
+        Footer.innerHTML += modal;
     };
 
-    Footer.innerHTML = modal;
+}
+
+function ModalCreator(modalContent, modalId) {
+    let modal =
+        "<div class='modal' style='background-color: rgba(0, 0, 0, 0.5);' id='" + modalId + "'>" +
+            "<div class='animate__animated h-100 w-100 d-flex'>" +
+                "<div class='container my-auto p-4'>" +
+                    "<div class='w-100 d-flex'>" +
+                        "<button class='btn ms-auto px-4 btn-danger' onclick='goSleepModal(\"" + modalId + "\")'>" +
+                            "<i class='center fa fa-times'></i>" +
+                        "</button>" +
+                    "</div>" +
+                    "<div class='section w-100 mt-auto p-3 p-md-5' style='margin-bottom: auto !important;overflow-y: scroll'>" +
+                        modalContent +
+                    "</div>" +
+                "</div>" +
+            "</div>" +
+        "</div>";
+    return modal;
 }
 
 ChangeLanguage('es');
