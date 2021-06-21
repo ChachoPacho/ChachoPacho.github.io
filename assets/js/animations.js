@@ -14,7 +14,6 @@ scrollTop.addEventListener('animationend', function () {
 });
 
 window.addEventListener('scroll', function () {
-    console.log(scrollPos, document.body.getBoundingClientRect().top)
     if (document.body.getBoundingClientRect().top > scrollPos) {
         nav.classList.add('animate__fadeInDown');
         nav.classList.remove('animate__fadeOutUp');

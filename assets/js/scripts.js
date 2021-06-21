@@ -7,19 +7,21 @@ const langBtn = $('#langBtn')[0];
 const AnimeTime = 250;
 let MenuIsAwake = false;
 
-emailForm.addEventListener('submit', function (e) {
-    e.preventDefault();
+if (window.onload) {
+    emailForm.addEventListener('submit', function (e) {
+        e.preventDefault();
 
-    const form = new FormData(this);
+        const form = new FormData(this);
 
-    emailer.setAttribute('href', `mailto:gbordonnet@gmail.com?subject=${form.get('name')} || ${form.get('email')}&body=<div style='width:100%; height:25px'>${form.get('subject')}</div> <div style='width:100%'>${form.get('msg')}</div>`);
+        emailer.setAttribute('href', `mailto:gbordonnet@gmail.com?subject=${form.get('name')} || ${form.get('email')}&body=<div style='width:100%; height:25px'>${form.get('subject')}</div> <div style='width:100%'>${form.get('msg')}</div>`);
 
-    emailer.click();
+        emailer.click();
 
-    wakeUpModal('contactModal')
-})
+        wakeUpModal('contactModal')
+    })
+    slant_image();
+}
 
-window.onload = slant_image();
 window.onresize = slant_image();
 
 function slant_image() {
@@ -101,27 +103,6 @@ function menuGoSleep() {
         menuBtnIcon.removeEventListener('animationend', MenuFunction);
     })
 }
-
-var isMobile = {
-    Android: function() {
-        return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function() {
-        return navigator.userAgent.match(/BlackBerry/i);
-    },
-    iOS: function() {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function() {
-        return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function() {
-        return navigator.userAgent.match(/IEMobile/i);
-    },
-    any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-    }
-};
 
 function moveToContact() {
     if(isMobile.any()) {

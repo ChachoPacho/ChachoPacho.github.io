@@ -5,32 +5,24 @@ const cContact = document.getElementById('cContact');
 const cWork = document.getElementById('cWork');
 const Menu = document.getElementById('Menu');
 
-
 const Footer = document.getElementById('footer');
 const langBtns = document.getElementsByClassName('lang-btn');
 
-const langs = ['#es', '#en'];
-
-window.addEventListener('hashchange', function () {
-    const hash = window.location.hash;
-    hashRead(hash);
-})
-
 window.addEventListener('load', function () {
-    const hash = window.location.hash;
-    if (hash == '') ChangeLanguage('es');
-    else hashRead(hash);
+    if (!['es', 'en'].includes(window.localStorage['lang'])) {
+        window.localStorage['lang'] = 'es';
+    }
+    DisplayContent(window.localStorage['lang']);
 })
-
-function hashRead(hash) {
-    if (langs.indexOf(hash) != -1) {
-        ChangeLanguage(hash.replace('#', ''));
-    } 
-}
 
 function ChangeLanguage(lang) {
+    window.localStorage['lang'] = lang;
     DisplayContent(lang);
+}
+
+function DisplayContent(lang) {
     const CurrentCont = CONTENT[lang];
+
     for (let content of ['cTitles', 'cGeneral', 'cButtons', 'cPersonalInfo']) {
         let Cont = CurrentCont[content];
         for (let e in Cont) {
@@ -50,11 +42,8 @@ function ChangeLanguage(lang) {
             }
         }
     }
-}
 
-function DisplayContent(lang) {
     Footer.innerHTML = '';
-    const CurrentCont = CONTENT[lang];
     
     TimeLineContent(cEducation, CurrentCont, 'cEducation');
     TimeLineContent(cWork, CurrentCont, 'cWork');
@@ -238,5 +227,3 @@ function ModalCreator(modalContent, modalId) {
         "</div>";
     return modal;
 }
-
-ChangeLanguage('es');
