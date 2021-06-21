@@ -1,5 +1,8 @@
 const scrollTop = document.getElementById('scroll-top');
 const visHide = document.getElementsByClassName('visHide');
+const nav = $('.nav')[0];
+
+var scrollPos = 0;
 
 scrollTop.addEventListener('click', function () {
     scrollTop.classList.add('animate__bounce');
@@ -11,6 +14,19 @@ scrollTop.addEventListener('animationend', function () {
 });
 
 window.addEventListener('scroll', function () {
+    console.log(scrollPos, document.body.getBoundingClientRect().top)
+    if (document.body.getBoundingClientRect().top > scrollPos) {
+        nav.classList.add('animate__fadeInDown');
+        nav.classList.remove('animate__fadeOutUp');
+    } else {
+        if (!MenuIsAwake) {
+            nav.classList.add('animate__fadeOutUp');
+            nav.classList.remove('animate__fadeInDown');
+        }
+    };
+    
+    scrollPos = (document.body.getBoundingClientRect()).top
+
     for (let index = 0; index < visHide.length; index++) {
         const element = visHide[index];
 
@@ -19,6 +35,7 @@ window.addEventListener('scroll', function () {
         }
     }
 })
+
 
 function animateElement(element, animation, special) {
     if (animation == 'zoomIn') {

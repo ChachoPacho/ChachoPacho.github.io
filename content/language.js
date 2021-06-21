@@ -3,6 +3,8 @@ const cSkills = document.getElementById('cSkills');
 const cInterests = document.getElementById('cInterests');
 const cContact = document.getElementById('cContact');
 const cWork = document.getElementById('cWork');
+const Menu = document.getElementById('Menu');
+
 
 const Footer = document.getElementById('footer');
 const langBtns = document.getElementsByClassName('lang-btn');
@@ -53,11 +55,29 @@ function ChangeLanguage(lang) {
 function DisplayContent(lang) {
     Footer.innerHTML = '';
     const CurrentCont = CONTENT[lang];
-
+    
     TimeLineContent(cEducation, CurrentCont, 'cEducation');
     TimeLineContent(cWork, CurrentCont, 'cWork');
-
+    
     let EditCont = '';
+    for (let element in CurrentCont['cTitles']) {
+        if (['language', 'personalCard'].includes(element)) continue;
+        EditCont += "<a class='menuItems' style='cursor: pointer' onclick='moveTo(\"" + element + "\")'>" + CurrentCont['cTitles'][element] + "</a>";
+    }
+
+    Menu.innerHTML = 
+        "<div class='menuDiv'>" +
+            "<div class='menuHeader'>" +
+                "<div class='menuHeaderBorder'>" + 
+                    "<div class='menuHeaderText'>CV</div>" +
+                "</div>" +
+            "</div>" +
+        "</div>" +
+        "<div class='menuNav p-4'>" +
+            EditCont +
+        "</div>";
+
+    EditCont = '';
     for (const e in CurrentCont['cSkills']) {
         let cont = CurrentCont['cSkills'][e];
         EditCont +=

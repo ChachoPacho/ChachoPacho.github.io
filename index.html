@@ -19,14 +19,15 @@
 </head>
 
 <body>
-    <div class="nav py-1">
-        <button class="btn btn-light px-auto my-2 mx-3 nav-btn">
+    <div class="nav animate__animated">
+        <div id="Menu">
+        </div>
+        <button class="btn btn-light px-auto my-2 mx-3 nav-btn" id="menuButton" onclick="menuWakeUp()">
             <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
-        <div class="dropdown d-flex ms-auto me-3 my-2">
+        <div class="dropdown d-flex ms-auto me-3 my-2" id="langBtn">
             <a class="btn btn-light dropdown-toggle my-auto nav-btn cTitles_language" role="button"
-                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Idioma </a>
+                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <a class="dropdown-item d-flex lang-btn" href="#es" lang='es'>
                     <span class="mx-auto" style="font-size: 1.5em;">&#127466;&#127480;</span>
@@ -39,7 +40,7 @@
     </div>
     <div class="page-content d-flex">
         <div class="container mb-4">
-            <div class="animate__animated section personal-card my-5 mb-sm-5">
+            <div class="animate__animated section personal-card my-5" id='home'>
                 <div class="row">
                     <div class="col-12 col-md-8" id="personal-card-information">
                         <div class="d-md-none mobileProfile mx-auto">
@@ -77,19 +78,19 @@
                             <div class="row mx-auto">
                                 <div class="py-4 d-flex">
                                     <a href="https://www.instagram.com/gonzalo_bordon02/" target="_blank"
-                                        class="btn-floating mx-auto mx-sm-3 color-ig">
+                                        class="btn-floating ms-auto me-2 mx-sm-3 color-ig">
                                         <i class="fa fa-instagram" aria-hidden="true"></i>
                                     </a>
                                     <a href="https://www.linkedin.com/in/gonzalobordon02" target="_blank"
-                                        class="btn-floating mx-auto mx-sm-3 color-in">
+                                        class="btn-floating mx-2 mx-sm-3 color-in">
                                         <i class="fa fa-linkedin" aria-hidden="true"></i>
                                     </a>
                                     <a href="https://www.gonzalobordon.com.ar" target="_blank"
-                                        class="btn-floating mx-auto mx-sm-3 color-wb">
+                                        class="btn-floating mx-2 mx-sm-3 color-wb">
                                         <i class="fa fa-globe" aria-hidden="true"></i>
                                     </a>
                                     <a href="https://www.github.com/chachopacho/" target="_blank"
-                                        class="btn-floating mx-auto mx-sm-3 color-gh">
+                                        class="btn-floating me-auto ms-2 mx-sm-3 color-gh">
                                         <i class="fa fa-github" aria-hidden="true"></i>
                                     </a>
                                 </div>
@@ -104,7 +105,7 @@
                     </div>
                 </div>
             </div>
-            <div class="animate__animated visHide section my-5 mb-sm-5 p-5 mt-6">
+            <div class="animate__animated visHide section py-5 p-5 mt-6" id='about'>
                 <p class="cPersonalInfo_0"></p>
                 <ul class="fa-ul ms-2 ms-sm-3 ms-md-4 ms-lg-5">
                     <li style="color: #fe0115;">
@@ -126,14 +127,14 @@
                     </div>
                 </div>
             </div>
-            <div class="animate__animated visHide section-div my-5 mb-sm-5 mt-6">
+            <div class="animate__animated visHide section-div py-5 mt-6" id='education'>
                 <div class="row">
                     <h4 class="text-center cTitles_education"></h4>
                     <div class="time-line py-5" id="cEducation">
                     </div>
                 </div>
             </div>
-            <div class="animate__animated visHide section-div my-5 mb-sm-5">
+            <div class="animate__animated visHide section-div py-5" id='skills'>
                 <div class="row">
                     <h4 class="text-center cTitles_skills"></h4>
                     <div class="section skills-card my-5">
@@ -141,17 +142,17 @@
                     </div>
                 </div>
             </div>
-            <div class="animate__animated visHide section-div my-5 mb-sm-5">
+            <div class="animate__animated visHide section-div my-5" id='work'>
                 <div class="row">
                     <h4 class="text-center cTitles_work"></h4>
                     <div class="time-line py-5" id="cWork"></div>
                 </div>
             </div>
-            <div class="animate__animated visHide section-div my-5 mb-sm-5">
+            <div class="animate__animated visHide section-div my-5" id='interest'>
                 <h4 class="text-center cTitles_interest"></h4>
                 <div class="section w-100 my-5 overflow-hidden" id="cInterests"></div>
             </div>
-            <div class="animate__animated visHide section-div my-5 mb-sm-5 mt-6">
+            <div class="animate__animated visHide section-div my-5 mt-6">
                 <h4 class="text-center cTitles_contact"></h4>
                 <div class="row my-5" id="cContact"></div>
             </div>

@@ -3,11 +3,13 @@ const CONTENT = {
         'cTitles': {
             'language': 'Idioma',
             'personalCard': 'Estudiante de Licenciatura en Ciencias de la Computación',
+            'home': '<i class="fa fa-home" aria-hidden="true"></i> INICIO',
+            'about': '<i class="fa fa-address-book" aria-hidden="true"></i> SOBRE MÍ',
             'education': '<i class="fa fa-graduation-cap" aria-hidden="true"></i> EDUCACIÓN',
             'skills': '<i class="fa fa-sliders" aria-hidden="true" style="color:brown;"></i> HABILIDADES',
+            'work': '<i class="fa fa-briefcase" aria-hidden="true" style="color:gray;"></i> EXPERIENCIA',
             'interest': '<i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> INTERESES',
             'contact': '<i class="fa fa-hashtag" aria-hidden="true" style="color:#8a3f00;"></i> CONTACTO',
-            'work': '<i class="fa fa-briefcase" aria-hidden="true" style="color:gray;"></i> EXPERIENCIA',
         },
         'cGeneral': {
             'copyRight': [
@@ -149,6 +151,8 @@ const CONTENT = {
         'cTitles': {
             'language': 'Language',
             'personalCard': 'Bachelor of Computer Science Student',
+            'home': '<i class="fa fa-home" aria-hidden="true"></i> HOME',
+            'about': '<i class="fa fa-address-book" aria-hidden="true"></i> ABOUT',
             'education': '<i class="fa fa-graduation-cap" aria-hidden="true"></i> EDUCATION',
             'skills': '<i class="fa fa-sliders" aria-hidden="true" style="color:brown;"></i> SKILLS',
             'work': '<i class="fa fa-briefcase" aria-hidden="true" style="color:gray;"></i> EXPERIENCE',
