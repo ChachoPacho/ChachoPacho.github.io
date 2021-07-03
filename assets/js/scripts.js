@@ -1,5 +1,4 @@
 const emailForm = document.getElementById('emailForm');
-const emailer = document.getElementById('emailer');
 const menuDiv = $('#Menu')[0];
 const menuBtn = $('#menuButton')[0];
 const langBtn = $('#langBtn')[0];
@@ -13,9 +12,7 @@ if (window.onload) {
 
         const form = new FormData(this);
 
-        emailer.setAttribute('href', `mailto:gbordonnet@gmail.com?subject=${form.get('name')} || ${form.get('email')}&body=<div style='width:100%; height:25px'>${form.get('subject')}</div> <div style='width:100%'>${form.get('msg')}</div>`);
-
-        emailer.click();
+	window.location.href = `mailto:gbordonnet@gmail.com?subject=${form.get('name')} || ${form.get('email')}&body=<div style='width:100%; height:25px'>${form.get('subject')}</div> <div style='width:100%'>${form.get('msg')}</div>`
 
         wakeUpModal('contactModal')
     })
@@ -28,7 +25,7 @@ function slant_image() {
     const profile_img = document.getElementsByClassName('img-responsive')[0];
     const profile_slant = document.getElementsByClassName('profile-slant')[0];
 
-    profile_slant.style = "border-right: " + profile_img.width / 4 + 'px solid transparent; border-bottom: ' + (profile_img.height + 1) + 'px solid #0194fe;';
+    profile_slant.style = "border-right: " + profile_img.width / 4 + 'px solid transparent; border-bottom: ' + (profile_img.height * 2) + 'px solid #0194fe;';
 };
 
 function wakeUpModal(id) {

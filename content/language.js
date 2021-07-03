@@ -129,7 +129,6 @@ function DisplayContent(lang) {
                     "<input type='email' name='email' placeholder='" + contacto['email'] + "' required>" +
                     "<textarea name='msg' id='form-msg' cols='30' rows='10' placeholder='" + contacto['message'] + "' required></textarea>" +
                     "<button type='submit' class='btn btn-primary w-100'>" + contacto['send'] + "</button>" +
-                    "<a id='emailer' style='visibility:hidden'></a>" +
                 "</div>" +
             "</form>" +
         "</div>";

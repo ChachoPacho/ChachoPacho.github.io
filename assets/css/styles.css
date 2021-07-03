@@ -38,6 +38,11 @@
         ;
         padding-bottom: 1rem !important;
     }
+    
+    #personal-card-information .card-content {
+        padding: 1rem !important;
+        padding-top: 10% !important;
+    }
 }
 
 @media (min-width: 992px) {
