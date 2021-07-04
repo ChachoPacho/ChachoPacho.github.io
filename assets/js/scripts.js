@@ -1,4 +1,3 @@
-const emailForm = document.getElementById('emailForm');
 const menuDiv = $('#Menu')[0];
 const menuBtn = $('#menuButton')[0];
 const langBtn = $('#langBtn')[0];
@@ -6,16 +5,19 @@ const langBtn = $('#langBtn')[0];
 const AnimeTime = 250;
 let MenuIsAwake = false;
 
-if (window.onload) {
+window.onload = function() {
+    const emailForm = document.getElementById('emailForm');
     emailForm.addEventListener('submit', function (e) {
         e.preventDefault();
 
-        const form = new FormData(this);
+        const form = new FormData(emailForm);
+        
+	const body = `Tema: ${form.get('subject')} \n Mensaje: ${form.get('msg')}`
 
-	window.location.href = `mailto:gbordonnet@gmail.com?subject=${form.get('name')} || ${form.get('email')}&body=<div style='width:100%; height:25px'>${form.get('subject')}</div> <div style='width:100%'>${form.get('msg')}</div>`
+	window.location.href = `mailto:gbordonnet@gmail.com?subject=${form.get('name')} || ${form.get('email')}&body=${encodeURIComponent(body)}`
 
         wakeUpModal('contactModal')
-    })
+    });
     slant_image();
 }
 
