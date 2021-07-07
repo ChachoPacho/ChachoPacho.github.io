@@ -164,7 +164,7 @@ function TimeLineContent(elementToFilled, CurrentCont, category) {
         let img = ''
 
         if (cont['modal']) {
-            modal_content = "<btn onclick=\"wakeUpModal('" + e + "')\" ><i class='fa fa-circle-o' aria-hidden='true'></i><i class='fa fa-circle-o' aria-hidden='true'></i><i class='fa fa-circle-o' aria-hidden='true'></i></btn>";
+            modal_content = "<btn onclick=\"wakeUpModal('" + e + "')\" type='button' ><i class='fa fa-circle-o' aria-hidden='true'></i><i class='fa fa-circle-o' aria-hidden='true'></i><i class='fa fa-circle-o' aria-hidden='true'></i></btn>";
             if (cont['iframe']) iframe = "<iframe class='w-100' src='" + cont['iframe'] + "' style='height: 20em'></iframe>";
             if (cont['img']) img = "<img class='w-100' src='" + cont['img'] + "'></img>";
 

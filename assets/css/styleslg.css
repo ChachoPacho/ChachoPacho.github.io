@@ -264,7 +264,7 @@ i.fa.fa-circle-o {
     background-color: lightslategray !important;
 }
 
-.btn-floating:hover, button:hover {
+.btn-floating:hover, button:hover, .btn-green:hover {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.48), 0 2px 10px 0 rgba(0, 0, 0, .48);
     color: #fff !important;
 }
