@@ -312,6 +312,7 @@ i.fa.fa-circle-o {
 .btn-green {
     background-color: #06A763;
     color: #fff;
+    text-decoration: none;
 }
 
 /* Time Line */
