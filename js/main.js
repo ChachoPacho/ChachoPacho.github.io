@@ -1,3 +1,5 @@
+const EMAIL_ADDRESS = "bordonnet@hotmail.com";
+
 ;(function () {
 	
 	'use strict';
@@ -103,6 +105,45 @@
 	
 	};
 
+	var contactMe = function name(params) {
+		$('.js-contactMe').on('click', function(event){
+			const animationName = 'titileoAnimation';
+
+			event.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $('#fh5co-about').offset().top
+			}, 500, 'easeInOutExpo');
+
+			$('.js-contactInfo')
+			.addClass(animationName)
+			.delay(3000)
+			.queue(function () {
+				$(this).removeClass(animationName).clearQueue();
+			});
+			
+			return false;
+		});
+	};
+
+	var mailMe = function name(params) {
+		$('.js-mailMe').on('click', function(event){
+			const LINE_BREAK_UNICODE = "%0D%0A";
+			const SPACE_UNICODE = "%20";
+
+			event.preventDefault();
+
+			let body = $("#name").val() + " - " + $("#email").val() + LINE_BREAK_UNICODE + LINE_BREAK_UNICODE +
+			$("#message").val().replaceAll("\n", LINE_BREAK_UNICODE).replaceAll(" ", SPACE_UNICODE);
+			
+			window.open('mailto:'+ EMAIL_ADDRESS +'?subject=' + $('#name').val()
+			 + '&subject= '+ $('#subject').val()
+			 + '&body='+ body);
+			
+			return false;
+		});
+	};
+
 	var pieChart = function() {
 		$('.chart').easyPieChart({
 			scaleColor: false,
@@ -134,7 +175,17 @@
 		$(".fh5co-loader").fadeOut("slow");
 	};
 
-	
+	var copyToClipboard = function name(params) {
+		$('.js-copyToClipboard').on('click', function(event){
+			
+			event.preventDefault();
+
+			navigator.clipboard.writeText(EMAIL_ADDRESS);
+			
+			return false;
+		});
+	}
+
 	$(function(){
 		contentWayPoint();
 		goToTop();
@@ -143,6 +194,9 @@
 		parallax();
 		// pieChart();
 		skillsWayPoint();
+		copyToClipboard();
+		contactMe();
+		mailMe();
 	});
 
 
