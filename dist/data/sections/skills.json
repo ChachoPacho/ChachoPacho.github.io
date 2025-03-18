@@ -1,0 +1,460 @@
+{
+  "locales": {
+    "en": {
+      "title": "<span class='text-primary'>Skill</span> Set",
+      "description": "Exploring the diverse range of skills I've acquired and developed:"
+    },
+    "es": {
+      "title": "Conjunto de <span class='text-primary'>Habilidades</span>",
+      "description": "Explorando la diversidad de habilidades que he adquirido y desarrollado:"
+    },
+    "fr": {
+      "title": "Ensemble de <span class='text-primary'>Compétences</span>",
+      "description": "Exploration de la gamme variée de compétences que j'ai acquises et développées:"
+    },
+    "zh": {
+      "title": "<span class='text-primary'>技能</span> 集",
+      "description": "探索我所掌握和发展的多样技能:"
+    }
+  },
+
+  "subcategories": [
+    {
+      "id": "abilities",
+      "type": "grid",
+      "progress": null,
+      "faIcon": "fa-solid fa-square",
+      "locales": {
+        "en": { "title": null }
+      }
+    },
+
+    {
+      "id": "programming",
+      "type": "grid",
+      "progress": "number",
+      "faIcon": "fa fa-code",
+      "locales": {
+        "en": { "title": "Programming" },
+        "es": { "title": "Programación" },
+        "fr": { "title": "Programmation" },
+        "zh": { "title": "编程" }
+      }
+    },
+
+    {
+      "id": "languages",
+      "type": "list",
+      "progress": {
+        "0": "beginner",
+        "20": "rookie",
+        "40": "intermediate",
+        "60": "advanced",
+        "80": "fluent",
+        "100": "native"
+      },
+      "faIcon": "fa fa-language",
+      "locales": {
+        "en": { "title": "Languages" },
+        "es": { "title": "Idiomas" },
+        "fr": { "title": "Langues" },
+        "zh": { "title": "语言" }
+      }
+    },
+
+    {
+      "id": "extra",
+      "type": "grid",
+      "progress": null,
+      "faIcon": "fa fa-marker",
+      "locales": {
+        "en": { "title": "Bonus Skills" },
+        "es": { "title": "Habilidades Adicionales" },
+        "fr": { "title": "Plus Habiletés" },
+        "zh": { "title": "附加技能" }
+      }
+    }
+  ],
+
+  "items": {
+    "abilities": [
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-code-branch",
+        "value": null,
+        "locales": {
+          "en": {
+            "title": "Mobile/Desktop/Web Development",
+            "description": "Specialized in Backend (in any of its forms), but I have a very good taste in Frontend ;) I have developed all kinds of applications, from accounting to entertainment."
+          },
+          "es": {
+            "title": "Desarrollo Móvil/Web/Escritorio",
+            "description": "Me especializo en todo lo que es Backend (en cualquiera de sus formas), pero tengo un muy buen gusto en el Frontend ;) He desarrollado todo tipo de aplicaciones, desde contables hasta de entretenimiento."
+          }
+        }
+      },
+
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-spaghetti-monster-flying",
+        "value": null,
+        "locales": {
+          "en": {
+            "title": "Integration",
+            "description": "Experience integrating third-party systems, such as payment gateways, email services, CRM systems, etc. It's not always as easy as following the documentation and support is always a hell O_o"
+          },
+          "es": {
+            "title": "Integración",
+            "description": "Experiencia integrando sistemas de terceros, como pasarelas de pago, servicios de correo electrónico, sistemas de CRM, etc. No siempre es tan fácil como seguir la documentación y el soporte siempre es un infierno O_o"
+          }
+        }
+      },
+
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-database",
+        "value": null,
+        "locales": {
+          "en": {
+            "title": "Data Science",
+            "description": "Let's extrapolate the entire Data Warehouse in tables, charts and more kind of graphs. It might be fun!"
+          },
+          "es": {
+            "title": "Ciencia de Datos",
+            "description": "Extrapolemos todo el Data Warehouse en tablas, diagramas y más tipos de gráficos. ¡Va a ser divertido!"
+          }
+        }
+      },
+
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-atom",
+        "value": null,
+        "locales": {
+          "en": {
+            "title": "Computer Science",
+            "description": "Mathematics, engineering, and logic, all in a row."
+          },
+          "es": {
+            "title": "Ciencias de la Computación",
+            "description": "Matemáticas, ingeniería y lógica, todo en uno."
+          }
+        }
+      }
+    ],
+
+    "programming": [
+      {
+        "imageIconUrl": null,
+        "faIcon": "fab fa-js-square",
+        "value": 95,
+        "locales": {
+          "en": {
+            "title": "NodeJs / JS / TS / NestJs",
+            "description": "Experience Time: 4 years"
+          },
+          "es": {
+            "title": "NodeJs / JS / TS / NestJs",
+            "description": "Experiencia: 4 años"
+          },
+          "fr": {
+            "title": "NodeJs / JS / TS / NestJs",
+            "description": "Expérience : 4 ans"
+          },
+          "zh": {
+            "title": "NodeJs / JS / TS / NestJs",
+            "description": "经验时长：3年"
+          }
+        }
+      },
+
+      {
+        "imageIconUrl": null,
+        "faIcon": "fab fa-python",
+        "value": 80,
+        "locales": {
+          "en": {
+            "title": "Python",
+            "description": "Experience Time: 5 years"
+          },
+          "es": { "title": "Python", "description": "Experiencia: 5 años" },
+          "fr": { "title": "Python", "description": "Expérience : 5 ans" },
+          "zh": { "title": "Python", "description": "经验时长：5年" }
+        }
+      },
+
+      {
+        "imageIconUrl": null,
+        "faIcon": "fab fa-docker",
+        "value": 70,
+        "locales": {
+          "en": {
+            "title": "Docker",
+            "description": "Experience: 3 years"
+          },
+          "es": {
+            "title": "Docker",
+            "description": "Experiencia: 3 años"
+          },
+          "fr": {
+            "title": "Docker",
+            "description": "Expérience : 3 ans"
+          }
+        }
+      },
+
+      {
+        "imageIconUrl": null,
+        "faIcon": "fab fa-linux",
+        "value": 70,
+        "locales": {
+          "en": {
+            "title": "Linux",
+            "description": "Experience: 5 years"
+          },
+          "es": {
+            "title": "Linux",
+            "description": "Experiencia: 5 años"
+          },
+          "fr": {
+            "title": "Linux",
+            "description": "Expérience : 5 ans"
+          }
+        }
+      },
+
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-database",
+        "value": 80,
+        "locales": {
+          "en": {
+            "title": "SQL / NoSQL",
+            "description": "Experience Time: 5 years"
+          },
+          "es": {
+            "title": "SQL / NoSQL",
+            "description": "Experiencia: 5 años"
+          },
+          "fr": { "title": "SQL / NoSQL", "description": "Expérience : 5 ans" },
+          "zh": { "title": "SQL / NoSQL", "description": "经验时长：5年" }
+        }
+      },
+
+      {
+        "imageIconUrl": null,
+        "faIcon": "fab fa-sass",
+        "value": 65,
+        "locales": {
+          "en": {
+            "title": "Sass/Less",
+            "description": "Experience Time: 3 years"
+          },
+          "es": { "title": "Sass/Less", "description": "Experiencia: 3 años" },
+          "fr": { "title": "Sass/Less", "description": "Expérience : 3 ans" },
+          "zh": { "title": "Sass/Less", "description": "经验时长：2年" }
+        }
+      },
+
+      {
+        "imageIconUrl": null,
+        "faIcon": "fab fa-vuejs",
+        "value": 75,
+        "locales": {
+          "en": { "title": "Vue 3", "description": "Experience Time: 4 years" },
+          "es": { "title": "Vue 3", "description": "Experiencia: 4 años" },
+          "fr": { "title": "Vue 3", "description": "Expérience : 4 ans" }
+        }
+      },
+
+      {
+        "imageIconUrl": null,
+        "faIcon": "fab fa-react",
+        "value": 60,
+        "locales": {
+          "en": {
+            "title": "React",
+            "description": "Experience Time: 4 years"
+          },
+          "es": {
+            "title": "React",
+            "description": "Experiencia: 4 años"
+          },
+          "fr": {
+            "title": "React",
+            "description": "Expérience : 4 ans"
+          }
+        }
+      },
+
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-brands fa-cloudflare",
+        "value": 50,
+        "locales": {
+          "en": {
+            "title": "Nginx / Cloudflare",
+            "description": "Experience: 2 years"
+          },
+          "es": {
+            "title": "Nginx / Cloudflare",
+            "description": "Experiencia: 2 años"
+          },
+          "fr": {
+            "title": "Nginx / Cloudflare",
+            "description": "Expérience : 2 ans"
+          }
+        }
+      },
+
+      {
+        "imageIconUrl": null,
+        "faIcon": "fas fa-brands fa-aws",
+        "value": 40,
+        "locales": {
+          "en": {
+            "title": "Cloud / AWS",
+            "description": "Experience: 3 months"
+          },
+          "es": {
+            "title": "Cloud / AWS",
+            "description": "Experiencia: 3 meses"
+          },
+          "fr": {
+            "title": "Cloud / AWS",
+            "description": "Expérience : 3 mois"
+          }
+        }
+      }
+    ],
+
+    "languages": [
+      {
+        "imageIconUrl": "images/flags/es.png",
+        "faIcon": null,
+        "value": 100,
+        "locales": {
+          "en": {
+            "title": "Spanish",
+            "description": "Native speaker with excellent communication and writing skills."
+          },
+          "es": {
+            "title": "Español",
+            "description": "Hablante nativo con excelentes habilidades de comunicación y escritura."
+          },
+          "fr": {
+            "title": "Espagnol",
+            "description": "Locuteur natif avec d'excellentes compétences en communication et en écriture."
+          },
+          "zh": {
+            "title": "西班牙语",
+            "description": "母语人士，具有出色的沟通和写作能力。"
+          }
+        }
+      },
+
+      {
+        "imageIconUrl": "images/flags/en.png",
+        "faIcon": null,
+        "value": 90,
+        "locales": {
+          "en": {
+            "title": "English",
+            "description": "Fluent in both spoken and written English; confident in professional communication."
+          },
+          "es": {
+            "title": "Inglés",
+            "description": "Fluido en inglés hablado y escrito; seguro en la comunicación profesional."
+          },
+          "fr": {
+            "title": "Anglais",
+            "description": "Courant à la fois à l'oral et à l'écrit en anglais ; confiant dans la communication professionnelle."
+          },
+          "zh": {
+            "title": "英语",
+            "description": "英语口语和书面表达流利；在专业交流中表现自信。"
+          }
+        }
+      }
+    ],
+
+    "extra": [
+      {
+        "imageIconUrl": null,
+        "faIcon": null,
+        "value": null,
+        "locales": {
+          "en": {
+            "title": "Back-End Development",
+            "description": "Able to code in Python, TypeScript, PHP, and Java (and a bit of Golang, C and C++)."
+          },
+          "es": {
+            "title": "Desarrollo Back-End",
+            "description": "Capaz de codificar en Python, TypeScript, PHP y Java (y un poco de Golang, C y C++)."
+          }
+        }
+      },
+      {
+        "imageIconUrl": null,
+        "faIcon": null,
+        "value": null,
+        "locales": {
+          "en": {
+            "title": "Front-End Development",
+            "description": "Able to code in VueJS, React JS and TypeScript."
+          },
+          "es": {
+            "title": "Desarrollo Front-End",
+            "description": "Capaz de codificar en VueJS, ReactJS y TypeScript."
+          }
+        }
+      },
+      {
+        "imageIconUrl": null,
+        "faIcon": null,
+        "value": null,
+        "locales": {
+          "en": {
+            "title": "Information Visualization",
+            "description": "Able to transform complex data into clear visuals."
+          },
+          "es": {
+            "title": "Visualización de Información",
+            "description": "Capaz de transformar datos complejos en visuales claros."
+          },
+          "fr": {
+            "title": "Visualisation de l'Information",
+            "description": "Capable de transformer des données complexes en visuels clairs."
+          },
+          "zh": {
+            "title": "信息可视化",
+            "description": "能够将复杂的数据转化为清晰的可视化图表。"
+          }
+        }
+      },
+      {
+        "imageIconUrl": null,
+        "faIcon": null,
+        "value": null,
+        "locales": {
+          "en": {
+            "title": "User-Centric Data Analysis",
+            "description": "Proficient in analyzing data with a focus on the needs and preferences of users, enabling data-driven decisions that align with user expectations."
+          },
+          "es": {
+            "title": "Análisis de Datos Centrado en el Usuario",
+            "description": "Competente en analizar datos con un enfoque en las necesidades y preferencias de los usuarios, lo que permite tomar decisiones basadas en datos que se alinean con las expectativas de los usuarios."
+          },
+          "fr": {
+            "title": "Analyse de Données Axée sur l'Utilisateur",
+            "description": "Compétent dans l'analyse de données axée sur les besoins et préférences des utilisateurs, permettant des décisions basées sur les données qui sont en accord avec les attentes des utilisateurs."
+          },
+          "zh": {
+            "title": "以用户为中心的数据分析",
+            "description": "熟练分析数据，专注于用户的需求和偏好，实现与用户期望相符的基于数据的决策。"
+          }
+        }
+      }
+    ]
+  }
+}

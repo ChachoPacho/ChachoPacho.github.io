@@ -1,0 +1,28 @@
+{
+  "locales": {
+    "en": {
+      "welcome": "Welcome to my <span class='text-primary'>Resume!</span>",
+      "welcomeShort": "Welcome!",
+      "bio": "I have a strong passion for statistics and programming, and I love working on projects that require an analytical and creative approach. I am passionate about technology and I am always looking to learn something new. I consider myself a proactive, responsible, and committed person."
+    },
+
+    "es": {
+      "welcome": "¡Bienvenido(a) a mi <span class='text-primary'>CV!</span>",
+      "welcomeShort": "¡Saludos!",
+      "bio": "Tengo una sólida pasión por las estadísticas y la programación, y me encanta trabajar en proyectos que requieren un enfoque analítico y creativo. Soy un apasionado de la tecnología y siempre estoy buscando aprender algo nuevo. Me considero una persona proactiva, responsable y comprometida con mi trabajo."
+    }
+  },
+
+  "items": {
+    "socialCircles": [
+      "@link{profile.contact.instagram}",
+      "@link{profile.contact.linkedin}",
+      "@link{profile.contact.github}"
+    ],
+
+    "contactListItems": [
+      "@link{profile.contact.address}",
+      "@link{profile.contact.email}"
+    ]
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "locales": {
+    "en": {
+      "title": "Career <span class='text-primary'>Achievements</span>",
+      "description": "My journey has been marked by unwavering dedication to learning and skill enhancement, along with enthusiastic participation in programming, math, and logic events. As a result, I have compiled a list of notable awards and certifications:"
+    },
+
+    "es": {
+      "title": "Logros <span class='text-primary'>Profesionales</span>",
+      "description": "Mi trayectoria ha estado marcada por una dedicación inquebrantable al aprendizaje y mejora de habilidades, junto con una participación entusiasta en eventos de programación, matemática y lógica. Como resultado, he recopilado una lista de premios y certificaciones notables:"
+    }
+  },
+
+  "subcategories": [
+    {
+      "id": "awards",
+      "faIcon": "fa-solid fa-trophy",
+      "locales": {
+        "en": { "title": "Awards", "buttonLabel": "More Info" },
+        "es": { "title": "Premios", "buttonLabel": "Más Información" },
+        "fr": { "title": "Prix", "buttonLabel": "Plus d'Infos" },
+        "zh": { "title": "奖项", "buttonLabel": "了解更多" }
+      }
+    },
+
+    {
+      "id": "certifications",
+      "faIcon": "fa-solid fa-award",
+      "locales": {
+        "en": {
+          "title": "Certifications",
+          "buttonLabel": "View Certification"
+        },
+        "es": {
+          "title": "Certificaciones",
+          "buttonLabel": "Ver Certificación"
+        },
+        "fr": {
+          "title": "Certifications",
+          "buttonLabel": "Voir la Certification"
+        },
+        "zh": { "title": "获得的证书", "buttonLabel": "查看证书" }
+      }
+    }
+  ],
+
+  "items": {
+    "awards": [
+      {
+        "id": "oma_nationals",
+        "place": "@link{places.oma}",
+        "date": "2014/06",
+        "href": null,
+        "locales": {
+          "en": {
+            "title": "OMA Nationals",
+            "description": "I had the honor of reaching the national stage of the Argentine Mathematics Olympiad on multiple occasions."
+          },
+
+          "es": {
+            "title": "Nacionales de OMA",
+            "description": "Fueron múltiples las ocasiones en las que tuve el honor de llegar a la etapa nacional de las Olimpiadas de Matemática Argentina."
+          }
+        }
+      },
+
+      {
+        "id": "space_camp",
+        "place": "@link{places.dos_usa}",
+        "date": "2019/06",
+        "href": "https://www.infobae.com/salud/ciencia/2019/09/20/manana-comienza-el-increible-viaje-de-50-estudiantes-argentinos-a-un-campamento-espacial-en-eeuu/",
+        "locales": {
+          "en": {
+            "title": "Space Camp",
+            "description": "Scholarship awarded by the United States Embassy to attend Space Camp in Huntsville, Alabama, in commemoration of the 50th anniversary of the moon landing."
+          },
+
+          "es": {
+            "title": "Space Camp",
+            "description": "Beca otorgada por la Embajada de Estados Unidos para asistir al Space Camp en Huntsville, Alabama, en conmemoración del 50 aniversario de la llegada del hombre a la Luna."
+          }
+        }
+      }
+    ],
+
+    "certifications": [
+      {
+        "id": "rooftop_diploma",
+        "place": "@link{places.rooftop}",
+        "date": "2021/08",
+        "href": "https://www.rooftopacademy.com/",
+        "locales": {
+          "en": {
+            "title": "Backend Development Diploma",
+            "description": "Bootcamp which contains Web Development in the first half and specialized in Backend Development in the last half."
+          },
+
+          "es": {
+            "title": "Diploma en Desarrollo Backend",
+            "description": "Bootcamp que contiene Desarrollo Web en la primera mitad y se especializa en Desarrollo Backend en la última mitad."
+          }
+        }
+      },
+
+      {
+        "id": "english_b2",
+        "place": "@link{places.ef_set}",
+        "date": "2021/04",
+        "href": "pdf/EF SET Certificate.pdf",
+        "locales": {
+          "en": {
+            "title": "EF SET B2 Certificate",
+            "description": "B2 level certificate in English, awarded by EF SET."
+          },
+
+          "es": {
+            "title": "Certificado EF SET C2",
+            "description": "Certificado de nivel C2 en inglés, otorgado por EF SET."
+          }
+        }
+      },
+
+      {
+        "id": "tap_2023",
+        "place": "@link{places.unlam}",
+        "date": "2023/06",
+        "href": null,
+        "locales": {
+          "en": {
+            "title": "Argentinian Programming Tournament 2023",
+            "description": "Participation in the Argentinian Programming Tournament 2023. In which not only competed but also had a week of training in various topics such as algorithms, structures, mathematics and logic."
+          },
+
+          "es": {
+            "title": "Torneo Argentino de Programación 2023",
+            "description": "Participación en el Torneo Argentino de Programación 2023. En el cual no sólo se compitió sino que también hubo una semana de capacitaciones en diversos temas como algoritmos, estructuras, matemática y lógica."
+          }
+        }
+      }
+    ]
+  }
+}

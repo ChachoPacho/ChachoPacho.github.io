@@ -1,0 +1,160 @@
+{
+  "adobe": {
+    "logoUrl": "images/places/logo-adobe.png",
+    "faIcon": "fa fa-house-laptop",
+    "locales": {
+      "en": { "name": "Adobe Inc." }
+    }
+  },
+
+  "google": {
+    "logoUrl": null,
+    "faIcon": "fab fa-google",
+    "locales": {
+      "en": { "name": "Google" }
+    }
+  },
+
+  "udacity": {
+    "logoUrl": "images/places/logo-udacity.png",
+    "faIcon": "fa fa-house-laptop",
+    "locales": {
+      "en": { "name": "Udacity" }
+    }
+  },
+
+  "dos_usa": {
+    "logoUrl": "images/places/dos_usa.png",
+    "faIcon": "fas fa-earth-americas",
+    "locales": {
+      "en": { "name": "United States Embassy" },
+      "es": { "name": "Embajada de Estados Unidos" }
+    }
+  },
+
+  "ef_set": {
+    "logoUrl": "images/places/ef_set.png",
+    "faIcon": "fas fa-language",
+    "locales": {
+      "en": { "name": "EF SET" },
+      "es": { "name": "EF SET" }
+    }
+  },
+
+  "oma": {
+    "logoUrl": "images/places/oma.png",
+    "faIcon": "fas fa-square-root-variable",
+    "locales": {
+      "en": { "name": "Argentine Mathematical Olympiad" },
+      "es": { "name": "Olimpiadas Matemática Argentina" }
+    }
+  },
+
+  "zedplan": {
+    "logoUrl": "images/places/zedplan.jpeg",
+    "faIcon": "fas fa-building",
+    "locales": {
+      "en": { "name": "ZedPlan" },
+      "es": { "name": "ZedPlan" }
+    }
+  },
+
+  "forbes": {
+    "logoUrl": null,
+    "faIcon": "fa-solid fa-newspaper",
+    "locales": {
+      "en": { "name": "Forbes" }
+    }
+  },
+
+  "famaf": {
+    "logoUrl": "images/places/famaf.jpg",
+    "faIcon": "fas fa-university",
+    "locales": {
+      "en": {
+        "name": "Faculty of Mathematics, Astronomy, Physics and Computing - FaMAF"
+      },
+      "es": {
+        "name": "Facultad de Matemática, Astronomía, Física y Computación - FaMAF"
+      }
+    }
+  },
+
+  "unlam": {
+    "logoUrl": "images/places/famaf.jpg",
+    "faIcon": "fas fa-university",
+    "locales": {
+      "en": {
+        "name": "National University of La Matanza - UNLaM"
+      },
+      "es": {
+        "name": "Universidad Nacional de La Matanza - UNLaM"
+      }
+    }
+  },
+
+  "isficana": {
+    "logoUrl": "images/places/isficana.png",
+    "faIcon": "fas fa-university",
+    "locales": {
+      "en": {
+        "name": "San Francisco Institute of Argentine North American Cultural Exchange - ISFICANA"
+      },
+      "es": {
+        "name": "Instituto San Francisco de Intercambio Cultural Argentino Norte Americano - ISFICANA"
+      }
+    }
+  },
+
+  "pablovi": {
+    "logoUrl": "images/places/pablovi.jpg",
+    "faIcon": "fas fa-university",
+    "locales": {
+      "en": {
+        "name": "Pablo VI Higher Education Institute"
+      },
+      "es": {
+        "name": "Instituto de Educación Superior Pablo VI"
+      }
+    }
+  },
+
+  "rooftop": {
+    "logoUrl": "images/places/rooftop.webp",
+    "faIcon": "fas fa-university",
+    "locales": {
+      "en": {
+        "name": "Rooftop"
+      },
+      "es": {
+        "name": "Rooftop"
+      }
+    }
+  },
+
+  "estudio_rocha_asoc": {
+    "logoUrl": "images/places/estudio_rocha_asoc_logo.jpeg",
+    "faIcon": "fas fa-building",
+    "locales": {
+      "en": {
+        "name": "Estudio Rocha & Asoc."
+      },
+      "es": {
+        "name": "Estudio Rocha & Asoc."
+      }
+    }
+  },
+
+  "superprof": {
+    "logoUrl": "images/places/superprof.png",
+    "faIcon": "fas fa-chalkboard-teacher",
+    "locales": {
+      "en": {
+        "name": "Superprof"
+      },
+      "es": {
+        "name": "Superprof"
+      }
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "locales": {
+    "en": {
+      "title": "My <span class='text-primary'>Portfolio</span>",
+      "description": "Explore a selection of my recent projects and creative works."
+    },
+    "es": {
+      "title": "Mi <span class='text-primary'>Portafolio</span>",
+      "description": "Explora una selección de mis proyectos recientes y trabajos creativos."
+    },
+    "fr": {
+      "title": "Mon <span class='text-primary'>Portfolio</span>",
+      "description": "Découvrez une sélection de mes projets récents et œuvres créatives."
+    },
+    "zh": {
+      "title": "我的<span class='text-primary'>作品集</span>",
+      "description": "浏览我最近的一些项目和创意作品。"
+    }
+  },
+
+  "subcategories": [
+    {
+      "id": "general",
+      "locales": {
+        "en": { "title": "General" },
+        "es": { "title": "General" }
+      }
+    },
+    {
+      "id": "productivity",
+      "locales": {
+        "en": { "title": "Productivity" },
+        "es": { "title": "Productividad" },
+        "fr": { "title": "Productivité" },
+        "zh": { "title": "生产力" }
+      }
+    },
+    {
+      "id": "statistics",
+      "locales": {
+        "en": { "title": "Statistics" },
+        "es": { "title": "Estadísticas" }
+      }
+    }
+  ],
+
+  "items": {
+    "general": [
+      {
+        "id": "roofstore",
+        "title": "RoofStore",
+        "logoUrl": "images/portfolio/roofstore.png",
+        "links": [
+          {
+            "faIcon": "fa-brands fa-github",
+            "href": "https://github.com/RooftopAcademy/rooftend",
+            "id": "GitHub"
+          },
+          {
+            "faIcon": "fa-brands fa-github",
+            "href": "https://github.com/RooftopAcademy/roofstore",
+            "id": "GitHub"
+          }
+        ],
+        "locales": {
+          "en": {
+            "description": "<b>RoofStore</b> is a Mercado Libre-style platform developed in the RoofTop Academy bootcamp. This application allows users to buy and sell products, as well as manage their publications and purchases. I particularly participated in the development of <b>RoofEnd</b>, the backend of the application, using Nest.js, TypeORM, PostgreSQL, JWT, and AWS services.",
+            "tags": ["store", "shopping", "sales", "products"]
+          },
+          "es": {
+            "description": "<b>RoofStore</b> es una plataforma al estilo Mercado Libre, desarrollada en el bootcamp de RoofTop Academy. Esta aplicación permite a los usuarios comprar y vender productos, así como gestionar sus publicaciones y compras. Particularmente participié del desarrollo de <b>RoofEnd</b>, el backend de la aplicación, utilizando Nest.js, TypeORM, PostgreSQL, JWT y servicios de AWS.",
+            "tags": ["tienda", "compras", "ventas", "productos"]
+          }
+        }
+      },
+
+      {
+        "id": "the_thing",
+        "title": "The Thing",
+        "logoUrl": "images/portfolio/the_thing.jpg",
+        "links": [
+          {
+            "faIcon": "fa-brands fa-github",
+            "href": "https://github.com/Ingsoft-1-Sobreingenieria/The-Thing-Frontend",
+            "id": "GitHub"
+          },
+          {
+            "faIcon": "fa-brands fa-github",
+            "href": "https://github.com/Ingsoft-1-Sobreingenieria/The-Thing-Backend",
+            "id": "GitHub"
+          }
+        ],
+        "locales": {
+          "en": {
+            "description": "<b>The Thing</b> is a competitive multiplayer card game based on the 1982 movie <a href='https://www.imdb.com/title/tt0084787/' target='_blank'>The Thing</a>. I worked as a Project Leader but actively participated in the development of the application's backend, as well as support and maintenance of the frontend.",
+            "tags": ["game", "cards", "multiplayer", "The Thing"]
+          },
+          "es": {
+            "description": "<b>The Thing</b> es un juego de cartas multijugador competitivo basado en la película <a href='https://www.imdb.com/title/tt0084787/' target='_blank'>The Thing</a> de 1982. Trabajé como Project Leader pero participé activamente en el desarrollo del backend de la aplicación, así como soporte y mantenimiento del frontend.",
+            "tags": ["juego", "cartas", "multiplayer", "The Thing"]
+          }
+        }
+      }
+    ],
+
+    "productivity": [
+      {
+        "id": "ceut_app",
+        "title": "CEUT App",
+        "logoUrl": "images/portfolio/ceut.jpeg",
+        "links": [
+          {
+            "faIcon": "fas fa-globe",
+            "href": "https://ceut.vercel.app/",
+            "id": "Web"
+          },
+
+          {
+            "faIcon": "fa-brands fa-github",
+            "href": "https://github.com/jjsanmartino03/ceut",
+            "id": "GitHub"
+          }
+        ],
+        "locales": {
+          "en": {
+            "description": "<b>CEUT App</b> is a web application developed for the Student Center of UTN San Francisco. This application allows university students to access relevant information, events, news, and useful resources for their academic life. <b>CEUT App</b> was developed addressing the issues that CEUT informed us about, including difficulties in centralizing and distributing information, and the lack of a platform that allows communication between students and the institution. <b><i>Currently out of service.</b></i>",
+            "tags": ["app", "communication", "productivity", "university"]
+          },
+          "es": {
+            "description": "<b>CEUT App</b> es una aplicación web desarrollada para el Centro de Estudiantes de UTN San Francisco. Esta aplicación permite a los estudiantes de la universidad acceder a información relevante, eventos, noticias y recursos útiles para su vida académica. <b>CEUT App</b> fue desarrollada atendiendo las problemáticas que CEUT nos informó, dentro de lo que comprende dificultades a la hora de centralizar y distribuir información, y la falta de una plataforma que permita la comunicación entre los estudiantes y la institución. <b><i>Actualmente fuera de servicio.</b></i>",
+            "tags": [
+              "aplicación",
+              "comunicación",
+              "productividad",
+              "universidad"
+            ]
+          }
+        }
+      }
+    ],
+
+    "statistics": [
+      {
+        "id": "tilley_bundling_algorithm",
+        "title": "Tilley Bundling Algorithm",
+        "logoUrl": "images/portfolio/tilley_alghorithm.png",
+        "links": [
+          {
+            "faIcon": "fa-brands fa-github",
+            "href": "https://github.com/ChachoPacho/Tilley_Bundling_Algorithm",
+            "id": "GitHub"
+          }
+        ],
+        "locales": {
+          "en": {
+            "description": "<b>Tilley Bundling Algorithm</b> is the implementation of an American Option valuation algorithm using Monte Carlo simulations, based on the research of Tilley J., J. C. Cox, and M. E. Rubinstein. This algorithm allows for efficient and accurate valuation of American options and is a useful tool for financial decision-making.",
+            "tags": ["algorithm", "finance", "simulation", "Monte Carlo"]
+          },
+          "es": {
+            "description": "<b>Tilley Bundling Algorithm</b> es la implementación de un algoritmo de valuación de Opciones Americanas mediante simulaciones de Monte Carlo, basado en las investigaciones de Tilley J., J. C. Cox y M. E. Rubinstein. Este algoritmo permite valuar opciones americanas de manera eficiente y precisa, y es una herramienta útil para la toma de decisiones financieras.",
+            "tags": ["algoritmo", "finanzas", "simulación", "Monte Carlo"]
+          }
+        }
+      }
+    ]
+  }
+}

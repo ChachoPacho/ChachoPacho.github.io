@@ -1,0 +1,76 @@
+{
+  "name": "Gonzalo Bordón",
+  "profilePictureUrl": "images/pictures/avatar.jpg",
+
+  "locales": {
+    "en": {
+      "credits": "Designed by <strong><a class='light' href='https://github.com/ChachoPacho'>Gonzalo Bordón</a></strong>",
+      "role": "Computer Science Analyst"
+    },
+
+    "es": {
+      "credits": "Hecho por <strong><a class='light' href='https://github.com/ChachoPacho'>Gonzalo Bordón</a></strong>",
+      "role": "Analista en Ciencias de la Computación"
+    },
+
+    "fr": {
+      "credits": "Conçu par <strong><a class='light' href='https://github.com/ChachoPacho'>Gonzalo Bordón</a></strong>",
+      "role": "Analyste en informatique"
+    },
+
+    "zh": {
+      "credits": "设计：<strong><a class='light' href='https://github.com/ChachoPacho'>Gonzalo Bordón</a></strong>",
+      "role": "计算机科学分析师"
+    }
+  },
+
+  "contact": {
+    "address": {
+      "id": "address",
+      "value": "Córdoba, Córdoba, Argentina",
+      "valueShort": "Córdoba, Córdoba, Argentina",
+      "faIcon": "fa-solid fa-city",
+      "href": null
+    },
+
+    "email": {
+      "id": "email",
+      "value": "bordonnet@hotmail.com",
+      "valueShort": "bordonnet@hotmail.com",
+      "faIcon": "fa-solid fa-envelope",
+      "href": "mailto:bordonnet@hotmail.com"
+    },
+
+    "github": {
+      "id": "github",
+      "value": "@ChachoPacho",
+      "valueShort": "@ChachoPacho",
+      "faIcon": "fa-brands fa-github",
+      "href": "https://github.com/ChachoPacho"
+    },
+
+    "instagram": {
+      "id": "instagram",
+      "value": "@gonzalo_bordon02",
+      "valueShort": "@gonzalo_bordon02",
+      "faIcon": "fa-brands fa-instagram",
+      "href": "https://instagram.com/gonzalo_bordon02"
+    },
+
+    "linkedin": {
+      "id": "linkedin",
+      "value": "@gonzalobordon02",
+      "valueShort": "@gonzalobordon02",
+      "faIcon": "fa-brands fa-linkedin",
+      "href": "https://linkedin.com/in/gonzalobordon02"
+    },
+
+    "phone": {
+      "id": "phone",
+      "value": "+54 (____) ______",
+      "valueShort": "+54 (____) ______",
+      "faIcon": "fa-solid fa-phone",
+      "href": "tel:549__________"
+    }
+  }
+}

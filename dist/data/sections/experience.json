@@ -1,0 +1,128 @@
+{
+  "locales": {
+    "en": {
+      "title": "<span class='text-primary'>Professional</span> Experience",
+      "description": "A look into my work experience and career journey."
+    },
+
+    "es": {
+      "title": "<span class='text-primary'>Experiencia</span> Profesional",
+      "description": "Un vistazo a mi experiencia laboral y trayectoria profesional."
+    },
+
+    "fr": {
+      "title": "Expérience <span class='text-primary'>Professionnelle</span>",
+      "description": "Un aperçu de mon expérience professionnelle et de mon parcours de carrière."
+    },
+
+    "zh": {
+      "title": "<span class='text-primary'>专业</span> 经验",
+      "description": "了解我的工作经验和职业之旅。"
+    }
+  },
+
+  "items": [
+    {
+      "id": "experience_item_1",
+      "place": "@link{places.estudio_rocha_asoc}",
+      "period": ["2021/01", "2021/06"],
+      "locales": {
+        "en": {
+          "title": "Trainee Software Dev.",
+          "description": "Intership in a marketing company. Development of a WordPress-like system.",
+          "tags": ["Web", "Backend", "Responsive Design", "User Research"]
+        },
+        "es": {
+          "title": "Trainee Software Dev.",
+          "description": "Pasantía en una empresa de marketing. Desarrollo de un sistema tipo WordPress.",
+          "tags": [
+            "Web",
+            "Backend",
+            "Diseño Responsivo",
+            "Investigación de Usuarios"
+          ]
+        }
+      }
+    },
+
+    {
+      "id": "experience_item_2",
+      "place": "@link{places.superprof}",
+      "period": ["2020/01", "2024/06"],
+      "locales": {
+        "en": {
+          "title": "Teacher at Superprof",
+          "description": "Taught high school students and university freshmen in subjects such as mathematics, physics, logic, and basic Python programming and SQL statements.",
+          "tags": ["Mathematics", "Physics", "Logic", "Python", "SQL"]
+        },
+        "es": {
+          "title": "Profesor en Superprof",
+          "description": "Di clases a estudiantes de nivel secundario e ingresantes a la universidad en materias de matemáticas, física, lógica y programación básica en Python y sentencias SQL.",
+          "tags": ["Matemáticas", "Física", "Lógica", "Python", "SQL"]
+        }
+      }
+    },
+
+    {
+      "id": "experience_item_3",
+      "place": "@link{places.zedplan}",
+      "period": ["2022/06", "2025/06"],
+      "locales": {
+        "en": {
+          "title": "Software Developer",
+          "description": "Work in a software development team. Development of web and mobile applications. Implementation of CI/CD, third-party integration, and scrapping. My journey from Trainee to Jr. to SSr., where I went from only local projects to live accesses, leading projects, managing their infrastructure, and attending the client's specific needs through meetings and prototypes developments.",
+          "tags": [
+            "CI/CD",
+            "Networks",
+            "Design Strategy",
+            "Testing",
+            "Third-party Integration",
+            "Scrapping",
+            "Client Talk and Understanding"
+          ]
+        },
+        "es": {
+          "title": "Desarrollador de Software",
+          "description": "Trabajo en un equipo de desarrollo de software. Desarrollo de aplicaciones web y móviles. Implementación de CI/CD, integración de terceros y scrapping. Mi paso de Trainne a Jr. a SSr., donde pasé de sólo proyectos locales a accesos a vivos, liderando proyectos, gestionando su infraestructura y atendiendo las necesidades puntuales del cliente mediante reuniones y desarrollo de prototipos.",
+          "tags": [
+            "CI/CD",
+            "Networks",
+            "Estrategia de Diseño",
+            "Testing",
+            "Integración de Terceros",
+            "Scrapping",
+            "Charla y Entendimiento del Cliente"
+          ]
+        }
+      }
+    },
+
+    {
+      "id": "experience_item_4",
+      "place": "@link{places.famaf}",
+      "period": ["2023/06", "2025/12"],
+      "locales": {
+        "en": {
+          "title": "Linux Teacher",
+          "description": "Led a work team, managing an educational program and teaching Linux classes for vulnerable sectors. I was part of a CSE project for the refurbishment of computers for vulnerable sectors, along with their subsequent training in the use of said equipment.",
+          "tags": [
+            "Linux",
+            "Education",
+            "Team Management",
+            "Planning and Scheduling"
+          ]
+        },
+        "es": {
+          "title": "Profesor de Linux",
+          "description": "Lideré un equipo de trabajo, gestionando un plan de estudios y dictando clases de Linux para sectores vulnerables. Fui parte de un proyecto de CSE de reacondicionamiento de computadoras para sectores vulnerables, junto con su posterior capacitación en el uso de dichos equipos.",
+          "tags": [
+            "Linux",
+            "Educación",
+            "Gestión de Equipos",
+            "Planeación y Scheduling"
+          ]
+        }
+      }
+    }
+  ]
+}

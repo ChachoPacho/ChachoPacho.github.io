@@ -1,0 +1,97 @@
+{
+  "locales": {
+    "en": {
+      "title": "<span class='text-primary'>Educational</span> Background",
+      "description": "A glimpse into my academic trajectory and accomplishments."
+    },
+
+    "es": {
+      "title": "Antecedentes <span class='text-primary'>Educativos</span>",
+      "description": "Un vistazo a mi trayectoria académica y logros."
+    },
+
+    "fr": {
+      "title": "Parcours <span class='text-primary'>Éducatif</span>",
+      "description": "Un aperçu de mon parcours académique et de mes réalisations."
+    },
+
+    "zh": {
+      "title": "<span class='text-primary'>教育</span> 背景",
+      "description": "一瞥我的学术轨迹和成就。"
+    }
+  },
+
+  "items": [
+    {
+      "id": "certificate_english",
+      "place": "@link{places.isficana}",
+      "period": ["2012/04", "2020/12"],
+
+      "locales": {
+        "en": {
+          "title": "Certificate in English Language",
+          "description": "Intensive course focused on the development of language skills, with a strong emphasis on grammar, vocabulary, and pronunciation. The course also includes cultural aspects of the English-speaking world."
+        },
+
+        "es": {
+          "title": "Certificado en Lengua Inglesa",
+          "description": "Curso intensivo centrado en el desarrollo de habilidades lingüísticas, con un fuerte énfasis en gramática, vocabulario y pronunciación. El curso también incluye aspectos culturales del mundo de habla inglesa."
+        }
+      }
+    },
+
+    {
+      "id": "high_school_diploma",
+      "place": "@link{places.pablovi}",
+      "period": ["2015/04", "2020/12"],
+
+      "locales": {
+        "en": {
+          "title": "High School Diploma in Economics and Business Administration",
+          "description": "Intensive program focused on the development of economic and business skills, with a strong emphasis on accounting, finance, and management."
+        },
+
+        "es": {
+          "title": "Bachiller en Economía y Administración de Empresas",
+          "description": "Programa intensivo centrado en el desarrollo de habilidades económicas y empresariales, con un fuerte énfasis en contabilidad, finanzas y gestión."
+        }
+      }
+    },
+
+    {
+      "id": "computer_science_analyst",
+      "place": "@link{places.famaf}",
+      "period": ["2021/01", "2023/12"],
+
+      "locales": {
+        "en": {
+          "title": "Computer Science Analyst",
+          "description": "Strong emphasis on programming, systems analysis and design, database, and computer networks. During the course, the main programming languages are studied and applied, as well as all the most important technologies in general. The theoretical aspects are not neglected and are of great use for the acquisition of new knowledge or technologies."
+        },
+
+        "es": {
+          "title": "Analista en Ciencias de la Computación",
+          "description": "Fuerte hincapié en programación, análisis y diseño de sistemas, base de datos y redes de computadoras. Durante el cursado se estudian y aplican los principales lenguajes de programación y en general todas las tecnologías más importantes. Los aspectos teóricos no son descuidados y resultan de gran utilidad para la adquisición de nuevos conocimientos o tecnologías."
+        }
+      }
+    },
+
+    {
+      "id": "computer_science_licenciature",
+      "place": "@link{places.famaf}",
+      "period": ["2024/01", "2025/12"],
+
+      "locales": {
+        "en": {
+          "title": "Bachelor's in Computer Science",
+          "description": "Training of students in both theoretical and technological aspects and oriented to those who aspire to continue with postgraduate studies or wish to have a more complete professional training. Due to the high teacher/student and machine/student ratio, teaching is personalized which creates an environment of study and work conducive to the development of the aptitudes of each student."
+        },
+
+        "es": {
+          "title": "Licenciatura en Ciencias de la Computación",
+          "description": "Formación de estudiantes tanto en aspectos teóricos como tecnológicos y orientada a aquellos que aspiren continuar con estudios de posgrado o deseen una formación profesional más completa. Debido a la alta relación docente/alumno y máquina/alumno, la enseñanza es personalizada lo que crea un ámbito de estudio y trabajo propicio para el desarrollo de las aptitudes de cada estudiante."
+        }
+      }
+    }
+  ]
+}
